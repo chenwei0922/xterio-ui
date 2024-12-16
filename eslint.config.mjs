@@ -10,10 +10,10 @@ export default tseslint.config(
   {
     extends: [
       pluginJs.configs.recommended,
-      ...tseslint.configs.recommended
-      // pluginPrettier
-      // pluginReact.configs['flat/essential']
-      // '@react-native'
+      ...tseslint.configs.recommended,
+      pluginPrettier,
+      pluginReact.configs['flat/essential'],
+      '@react-native'
     ],
     plugins: {
       'react-hooks': reactHooks,
