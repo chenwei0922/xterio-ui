@@ -42,3 +42,33 @@ npm install --save-dev lint-staged
 
 @commitlint/cli  @commitlint/config-conventional
 ```
+
+
+"devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@commitlint/cli": "^19.6.1",
+    "@commitlint/config-conventional": "^19.6.0",
+    "@eslint/js": "^9.16.0",
+    "@react-native/eslint-config": "^0.76.5",
+    "@types/jest": "^29.5.12",
+    "@types/react": "~18.3.12",
+    "@types/react-test-renderer": "^18.3.0",
+    "@typescript-eslint/eslint-plugin": "^8.18.0",
+    "@typescript-eslint/parser": "^8.18.0",
+    "eslint": "^9.9.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-promise": "^6.6.0",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.16",
+    "globals": "^15.13.0",
+    "husky": "^9.1.7",
+    "jest": "^29.2.1",
+    "jest-expo": "~52.0.2",
+    "lint-staged": "^15.2.11",
+    "prettier": "^3.4.2",
+    "react-test-renderer": "18.3.1",
+    "typescript": "^5.3.3",
+    "typescript-eslint": "^8.18.0"
+  },
