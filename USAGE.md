@@ -39,4 +39,6 @@ npx husky init
 npx husky add .husky/commit-msg 'npx --no-install commitlint --edit "$1"'
 
 npm install --save-dev lint-staged
+
+@commitlint/cli  @commitlint/config-conventional
 ```
