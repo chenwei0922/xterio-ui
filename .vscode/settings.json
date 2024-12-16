@@ -1,0 +1,24 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode", // 告诉 VSCode 使用 Prettier 作为默认文件格式化程序
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "always",
+    "source.fixAll.format": "always"
+  },
+  //保存时自动格式化，根据prettier配置项
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.tabSize": 2,
+  //保存时自动修复
+  "eslint.format.enable": true,
+  "eslint.codeActionsOnSave.rules": null,
+  "eslint.codeActionsOnSave.mode": "all",
+  "vs-code-prettier-eslint.prettierLast": true,
+  // //关闭js/ts默认format，统一用eslint
+  // "javascript.format.enable": false,
+  // "typescript.format.enable": false
+  // 禁用 VSCode 默认的 HTML 格式化
+  "html.format.enable": false,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
