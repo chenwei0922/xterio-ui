@@ -9,7 +9,7 @@ import pluginJest from 'eslint-plugin-jest'
 
 export default tseslint.config(
   {
-    ignores: ['**/dist/**']
+    ignores: ['**/dist/**', 'app-example/**/*']
   },
   {
     files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'],
