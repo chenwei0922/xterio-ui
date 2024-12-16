@@ -11,17 +11,19 @@ export default tseslint.config(
     extends: [
       pluginJs.configs.recommended,
       ...tseslint.configs.recommended,
-      pluginPrettier,
-      pluginReact.configs['flat/essential'],
-      '@react-native'
-    ],
+      pluginPrettier
+      // pluginReact.configs['flat/essential'],
+      // '@react-native'
+    ]
+  },
+  { files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'] },
+  { languageOptions: { globals: { ...globals.browser, ...globals.node } } },
+  {
     plugins: {
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh
     }
   },
-  { files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'] },
-  { languageOptions: { globals: { ...globals.browser, ...globals.node } } },
   {
     rules: {
       ...reactHooks.configs.recommended.rules,
