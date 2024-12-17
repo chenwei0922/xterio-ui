@@ -41,7 +41,13 @@ npx husky add .husky/commit-msg 'npx --no-install commitlint --edit "$1"'
 npm install --save-dev lint-staged
 
 @commitlint/cli  @commitlint/config-conventional
+
+npx expo install nativewind tailwindcss react-native-reanimated react-native-safe-area-context
+npx tailwindcss init
+
+npx expo customize metro.config.js
 ```
+
 
 
 "devDependencies": {

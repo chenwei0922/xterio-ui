@@ -6,10 +6,10 @@ import pluginHooks from 'eslint-plugin-react-hooks'
 import pluginRefresh from 'eslint-plugin-react-refresh'
 import pluginReact from 'eslint-plugin-react'
 import pluginJest from 'eslint-plugin-jest'
-import pluginrn from '@react-native/eslint-plugin'
-import pluginExpo from 'eslint-config-expo'
-import eslintReactNative from 'eslint-plugin-react-native'
-import { fixupPluginRules } from '@eslint/compat'
+// import pluginrn from '@react-native/eslint-plugin'
+// import pluginExpo from 'eslint-config-expo'
+// import eslintReactNative from 'eslint-plugin-react-native'
+// import { fixupPluginRules } from '@eslint/compat'
 
 //react插件如果是jsx/runtime则就不需要在文件中导入"import React from 'react'"
 // pluginReact.configs.flat['jsx-runtime'],
@@ -18,7 +18,7 @@ import { fixupPluginRules } from '@eslint/compat'
 //eslintReactNative:这个很久没维护了，也不支持eslint9，但是可以用fixupPluginRules转换
 export default tseslint.config(
   {
-    ignores: ['**/dist/**', 'app-example/**/*']
+    ignores: ['**/dist/**', 'app-example/**/*', '*.d.ts']
   },
   {
     files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'],
@@ -40,12 +40,13 @@ export default tseslint.config(
   ...tseslint.configs.recommended,
   prettierRecommended,
   //react插件如果是jsx/runtime则就不需要在文件中导入"import React from 'react'"
-  // pluginReact.configs.flat['jsx-runtime'],
-  pluginReact.configs.flat.recommended,
+  pluginReact.configs.flat['jsx-runtime'],
+  // pluginReact.configs.flat.recommended,
   pluginRefresh.configs.recommended,
   {
     rules: {
-      '@typescript-eslint/no-unused-vars': 'off'
+      '@typescript-eslint/no-unused-vars': 'off',
+      '@typescript-eslint/no-require-imports': 'off'
     }
   },
   {
