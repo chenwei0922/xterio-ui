@@ -72,3 +72,16 @@ npm install --save-dev lint-staged
     "typescript": "^5.3.3",
     "typescript-eslint": "^8.18.0"
   },
+
+
+  // https://docs.expo.dev/guides/using-eslint/
+eslint-config-expo
+module.exports = {
+  extends: ["expo", "prettier"],
+  plugins: ["prettier"],
+  ignorePatterns: ["/dist/*", "app-example/**/*"],
+  files: ["**/*.{js,mjs,cjs,ts,jsx,tsx}"],
+  rules: {
+    // 'prettier/prettier': 'error'
+  },
+};
